@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url("https://cdn.pixabay.com/photo/2018/06/09/21/37/summer-thunder-storm-3465247_1280.jpg") no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    color: white;
+}
+
+/* Título */
+.titulo {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: gold;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+/* Buscadores */
+.buscador {
+    margin: 10px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 12px;
+    width: 380px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.buscador input {
+    padding: 10px;
+    width: 60%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.buscador input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px #007bff;
+}
+
+.buscador button {
+    padding: 10px 18px;
+    margin-left: 10px;
+    background: #007bff; /* azul */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.buscador button:hover {
+    background: #0056b3;
+}
+
+/* Tarjeta Pokémon */
+.card {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 380px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+    backdrop-filter: blur(6px);
+}
+
+#tituloCard {
+    font-size: 1.6rem;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+#nombre_pokemon {
+    font-size: 1.3rem;
+    color: deepskyblue;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin: 15px 0;
+    filter: drop-shadow(0 0 12px rgba(255, 255, 0, 0.8));
+}
+
+/* Info extra simplificada */
+#infoExtra {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #fff;
+    text-align: left;
+}
+
+#infoExtra p {
+    margin: 6px 0;
+}
+
+/* Habilidades */
+#habilidadesPokemon {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#habilidadesPokemon li {
+    margin: 4px 0;
+    background: rgba(0, 123, 255, 0.2);
+    padding: 6px 10px;
+    border-radius: 6px;
+    display: inline-block;
+}

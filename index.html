@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pokédex Ligera</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1 class="titulo">Pokémon</h1>
+    <p class="subtitulo">Jannin Katerine Mendez Hernandez</p>
+  </header>
+
+  <section class="buscadores">
+    <div class="buscador">
+      <input type="text" id="inputBuscarNombre" placeholder="Buscar Pokémon por nombre">
+      <button id="btnBuscarNombre">Buscar Nombre</button>
+    </div>
+    <div class="buscador">
+      <input type="number" id="inputBuscarID" placeholder="Buscar Pokémon por ID">
+      <button id="btnBuscarID">Buscar ID</button>
+    </div>
+  </section>
+
+  <main class="card">
+    <h2 id="tituloCard">Cargando Pokémon...</h2>
+    <h3 id="nombre_pokemon"></h3>
+    <div class="imagen-container">
+      <img id="img" alt="Imagen Pokémon">
+    </div>
+
+    <div id="infoExtra">
+      <div class="stats">
+        <div class="stat-box">
+          <strong>ID</strong>
+          <span id="idPokemon"></span>
+        </div>
+        <div class="stat-box">
+          <strong>Peso</strong>
+          <span id="pesoPokemon"></span>
+        </div>
+        <div class="stat-box">
+          <strong>Altura</strong>
+          <span id="alturaPokemon"></span>
+        </div>
+      </div>
+      <p><strong>Habilidades:</strong></p>
+      <ul id="habilidadesPokemon"></ul>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
